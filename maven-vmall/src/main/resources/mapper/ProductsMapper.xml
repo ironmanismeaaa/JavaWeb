@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="vmall.dao.ProductsDao">
+<!-- 用户登录功能，返回User类对象 -->
+<select id="allcategories" resultType="String">
+	select distinct category from products group by category
+</select>
+
+<select id="prodlist" resultType="vmall.po.Products" parameterType="map">
+	select * from products where (price between #{minPrice} and #{maxPrice})
+	<if test="name!=null and name!=''">
+		and name like concat('%', #{name}, '%')
+	</if>
+	<if test="category!=null and category!=''">
+		and category=#{category}
+	</if>
+</select>
+
+<select id="oneProduct" parameterType="String"
+	resultType="vmall.po.Products">
+	select * from products where id=#{pid}
+</select>
+
+<select id="prodclass" parameterType="String" resultType="vmall.po.Products">
+	select * from products where category=#{category}
+</select>
+
+<insert id="save" parameterType="vmall.po.Products">
+	insert into products(id,name,price,category,soldnum,imgurl,description)
+		values(#{id},#{name},#{price},#{category},#{pnum},#{imgurl},#{description});
+</insert>
+
+<select id="findByImgurl" parameterType="String" resultType="vmall.po.Products">
+	select * from products where imgurl=#{imgurl}
+</select>
+
+<select id="allprods" resultType="vmall.po.Products">
+	select * from products
+</select>
+
+<update id="updateSaleStatus" parameterType="map">
+	update products set status=#{status} where id=#{id}
+</update>
+
+<update id="updateSoldNum" parameterType="map">
+	update products set soldNum=soldNum+#{buynum} where id=#{pid}
+</update>
+
+</mapper>

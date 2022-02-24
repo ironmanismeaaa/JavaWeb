@@ -1,0 +1,99 @@
+html {
+    height: 100%;
+}
+
+body{
+	background-image: url("../img/login/lobg.jpg");
+	background-size: cover;
+	background-position: top;
+	display: flex;
+	font-family: "Î¢ÈíÑÅºÚ";
+	align-items: center;
+    height: 100%;
+    justify-content: space-around;
+}
+h1{
+	width:300px;
+	margin:21px auto 0px;
+	text-align: center;
+	color:#990000;
+	font-size:27px;
+}
+form{
+	width:400px;
+	margin:25px auto 0px;
+}
+
+form input[type='text'],form input[type='password']{
+	border: 1px solid #CCCCCC;
+	height: 25px;
+	line-height:25px;
+	vertical-align: middle;
+}
+
+img {
+    width: 150px;
+    height: 100px;
+}
+
+
+.lg {
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 550px;
+}
+
+.l1 {
+    font-size: 90px;
+    font-weight: bold;
+    color: red;
+    font-family: auto;
+    font-style: oblique;
+}
+
+.l2 {
+    font-size: 24px;
+    font-family: cursive;
+    font-weight: 600;
+    height: 150px;
+    line-height: 150px;
+    color: white;
+}
+
+.ct {
+    width: 450px;
+    background-color: rgba(255,255,255,0.8);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+table{
+	margin:0px auto 0px;
+}
+td{
+	padding-top:10px;
+}
+.tdx{
+	text-align: right;
+}
+
+input[type='submit']{
+	background-image: url("../img/login/dlan01.jpg");
+	margin-top: 12px;
+	width:80px;
+	height:38px;
+	line-height:38px;
+	border-style:none;
+	font-size:17px;
+	font-weight:bold;
+	color:white;
+	cursor: pointer;
+}
+input[type='submit']:hover{
+	background-image: url("../img/login/dlan02.jpg");
+}

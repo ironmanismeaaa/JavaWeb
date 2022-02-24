@@ -1,0 +1,83 @@
+﻿@charset "utf-8";
+html{
+	height:100%;
+}
+body{
+	background-image: url("../img/regist/lodb.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	font-family: "微软雅黑";
+	height: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background-color: rgba(255,255,255,0.8);
+    width: 500px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+	width: 450px;
+	margin: 0 auto;
+}
+h1{
+	width: 300px;/* */
+	color: #990000;
+	margin: 19px auto 20px;
+	text-align: center;
+}
+
+table{
+	margin: 0 auto;
+	/*text-align: center;*/
+}
+td{
+	padding-top: 10px;
+}
+.tds{
+	font-size: 18px;
+	text-align: right;
+}
+
+input{
+	border: 1px solid #cccccc;
+	width: 150px;
+	height: 22px;
+}
+
+input[name='valistr']{
+	width:80px;
+}
+
+img{
+	vertical-align: top;
+}
+
+.sub_td{
+	text-align: center;
+}
+
+input[type='submit']{
+	border: none;
+	width:127px;
+	height: 44px;
+	font-size: 20px;
+	color: #FFFFFF;
+	font-weight: bolder;
+	background-image: url('../img/regist/zc_btn01.jpg');
+}
+
+input[type='submit']:hover{
+	background-image: url('../img/regist/zc_btn02.jpg');
+}
+
+.bt{
+	width:83px
+}
+

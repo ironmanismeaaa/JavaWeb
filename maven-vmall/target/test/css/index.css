@@ -1,0 +1,61 @@
+@charset "utf-8";
+{
+	border: 1px solid #999;
+}
+body{
+	margin:0px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+}
+#index #line1_d{
+	text-align:center;
+}
+#index #line2,#index #line3,#index #line4,#index #line5{
+	margin:0px auto;
+}
+
+/*第二行*/
+#index #line2{
+	text-align:center;
+	margin-top:8px;
+}
+#index #line2 #line2_1{
+	width:400px;
+}
+#index #line2 #line2_2{
+	width:400px;
+}
+#index #line2 #line2_3{
+	width:400px;
+}
+/*第三行*/
+#index #line3{
+	text-align:center;
+	margin-top:8px;
+}
+#index #line3 #line3_1{
+	width:400px;
+}
+#index #line3 #line3_2{
+	width:400px;
+}
+#index #line3 #line3_3{
+	width:400px;
+}
+/*第四行*/
+#index #line4{
+	text-align:center;
+	margin-top:8px;
+}
+#index #line4 #line4_1{
+	width:400px;
+}
+#index #line4 #line4_2{
+	width:400px;
+}
+#index #line4 #line4_3{
+	width:400px;
+}
+#index #line5_d {
+	text-align:center;
+}
